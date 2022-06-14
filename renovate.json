@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":prImmediately",
+    ":prHourlyLimit4",
+    ":ignoreUnstable",
+    ":label(renovate)",
+    ":enableVulnerabilityAlerts",
+    ":enableVulnerabilityAlertsWithLabel(security)"
+  ],
+  "branchPrefix": "renovate-",
+  "packageRules": [{
+    "datasources": ["docker"],
+    "registryUrls": ["http://localhost:80"]
+  }]
+}
