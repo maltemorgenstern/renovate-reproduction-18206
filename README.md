@@ -21,3 +21,40 @@ docker run \
   -it \
   renovate/renovate
 ```
+
+output:
+```sh
+ INFO: Repository started (repository=jmueller42/renovate-docker-404)
+       "renovateVersion": "32.85.0"
+ INFO: Dependency extraction complete (repository=jmueller42/renovate-docker-404)
+       "baseBranch": "main",
+       "stats": {
+         "managers": {"dockerfile": {"fileCount": 1, "depCount": 1}},
+         "total": {"fileCount": 1, "depCount": 1}
+       }
+ WARN: Invalid registry response (repository=jmueller42/renovate-docker-404)
+       "apiCheckUrl": "http://localhost:5000/v2/alpine/tags/list?n=10000",
+       "res": {
+         "statusCode": 404,
+         "body": {
+           "errors": [
+             {
+               "code": "NAME_UNKNOWN",
+               "message": "repository name not known to registry",
+               "detail": {"name": "alpine"}
+             }
+           ]
+         },
+         "headers": {
+           "content-type": "application/json; charset=utf-8",
+           "docker-distribution-api-version": "registry/2.0",
+           "x-content-type-options": "nosniff",
+           "date": "Tue, 14 Jun 2022 06:47:22 GMT",
+           "content-length": "114",
+           "connection": "close"
+         },
+         "authorization": false
+       }
+ INFO: Repository finished (repository=jmueller42/renovate-docker-404)
+       "durationMs": 4088
+```
