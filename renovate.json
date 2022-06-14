@@ -12,6 +12,6 @@
   "branchPrefix": "renovate-",
   "packageRules": [{
     "datasources": ["docker"],
-    "registryUrls": ["http://localhost:80"]
+    "registryUrls": ["http://localhost:5000"]
   }]
 }
