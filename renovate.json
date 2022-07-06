@@ -3,6 +3,7 @@
   "extends": [
     "config:base"
   ],
+  "pinDigests": true,
   "packageRules": [{
     "datasources": ["docker"],
     "registryUrls": ["http://localhost:5000"]
