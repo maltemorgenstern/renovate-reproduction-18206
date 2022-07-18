@@ -2,6 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [{
     "datasources": ["docker"],
-    "registryUrls": ["http://registry.hub.docker.com"]
+    "registryUrls": ["http://localhost:5000"]
   }]
 }
