@@ -4,6 +4,7 @@
     "config:base",
     "docker:pinDigests"
   ],
+  "includeForks": true,
   "packageRules": [
     {
       "matchDatasources": ["docker"],
